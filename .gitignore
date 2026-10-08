@@ -1,0 +1,32 @@
+# Credenciais locais
+
+.env
+.env.*
+
+# Permite manter um modelo sem credenciais reais
+
+!.env.example
+
+# Maven
+
+target/
+
+# Executável e arquivos gerados pelo jpackage
+
+app/
+
+# Eclipse
+
+.classpath
+.project
+.settings/
+
+# Logs
+
+*.log
+
+# Sistema operacional
+
+.DS_Store
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,65 @@
+/* =========================================================
+   CHATCLONE - TEMA ESCURO
+   ========================================================= */
+
+.root {
+    -fx-background-color: #0f1117;
+}
+
+/* Textos */
+.label {
+    -fx-text-fill: #e5e7eb;
+}
+
+/* Campos de texto */
+.text-field,
+.text-area {
+    -fx-control-inner-background: #1b1f2b;
+    -fx-text-fill: #f8fafc;
+    -fx-prompt-text-fill: #64748b;
+}
+
+/* Botões padrão */
+.button {
+    -fx-background-color: #1b1f2b;
+    -fx-text-fill: #e5e7eb;
+    -fx-background-radius: 10px;
+    -fx-border-color: #303548;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #272b45;
+    -fx-text-fill: white;
+}
+
+/* Barra personalizada */
+.barra-titulo {
+    -fx-background-color: #171923;
+    -fx-border-color: #272a36;
+}
+
+.nome-aplicacao {
+    -fx-text-fill: #f8fafc;
+}
+
+.botao-janela {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+}
+
+.botao-janela:hover {
+    -fx-background-color: #272b45;
+    -fx-text-fill: white;
+}
+
+.botao-fechar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+}
+
+.botao-fechar:hover {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+}

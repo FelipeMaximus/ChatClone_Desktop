@@ -1,0 +1,345 @@
+/* =========================================================
+   CHATCLONE - TEMA CLARO MODERNO
+   Fundo claro + detalhes em índigo/roxo
+   ========================================================= */
+
+.root {
+    -fx-background-color: #f8fafc;
+}
+
+/* Fundo principal */
+.border-pane {
+    -fx-background-color: #f8fafc;
+}
+
+/* Textos */
+.label {
+    -fx-text-fill: #1e293b;
+}
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.titulo-sidebar {
+    -fx-text-fill: #0f172a;
+}
+
+.botao-conversa {
+    -fx-background-color: transparent;
+    -fx-text-fill: #475569;
+}
+
+.botao-conversa:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #4f46e5;
+}
+
+.conversa-selecionada {
+    -fx-background-color: #eef2ff;
+    -fx-text-fill: #4f46e5;
+}
+
+.botao-sidebar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+}
+
+.botao-sidebar:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #4f46e5;
+}
+
+.botao-excluir {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+}
+
+.botao-excluir:hover {
+    -fx-background-color: #fef2f2;
+    -fx-text-fill: #ef4444;
+}
+
+/* =========================================================
+   NOVA CONVERSA
+   ========================================================= */
+
+.nova-conversa {
+    -fx-background-color: linear-gradient(
+        to right,
+        #6366f1,
+        #7c3aed
+    );
+    -fx-text-fill: white;
+}
+
+.nova-conversa:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #818cf8,
+        #8b5cf6
+    );
+}
+
+/* =========================================================
+   ÁREA DO CHAT
+   ========================================================= */
+
+.titulo-chat {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #0f172a;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 0 0 1px 0;
+}
+
+/* Mensagem do usuário */
+.mensagem-usuario {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #6366f1,
+        #7c3aed
+    );
+    -fx-text-fill: white;
+}
+
+/* Mensagem da IA */
+.mensagem-ia {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #334155;
+    -fx-border-color: #e2e8f0;
+}
+
+/* =========================================================
+   CAMPO DE MENSAGEM
+   ========================================================= */
+
+.text-area-mensagem {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #1e293b;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-border-color: #e2e8f0;
+}
+
+.text-area-mensagem .content {
+    -fx-background-color: #ffffff;
+}
+
+.text-area-mensagem:focused {
+    -fx-border-color: #6366f1;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(99, 102, 241, 0.20),
+        10,
+        0.2,
+        0,
+        0
+    );
+}
+
+/* Área inferior do chat */
+.border-pane > .bottom {
+    -fx-background-color: #f8fafc;
+}
+
+.area-entrada {
+    -fx-background-color: #f8fafc;
+}
+
+/* =========================================================
+   BOTÃO ENVIAR
+   ========================================================= */
+
+.botao-enviar {
+    -fx-background-color: linear-gradient(
+        to right,
+        #6366f1,
+        #7c3aed
+    );
+    -fx-text-fill: white;
+}
+
+.botao-enviar:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #818cf8,
+        #8b5cf6
+    );
+}
+
+/* =========================================================
+   SCROLL
+   ========================================================= */
+
+.scroll-pane,
+.scroll-pane .viewport,
+.scroll-pane .corner {
+    -fx-background-color: #f8fafc;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #cbd5e1;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #94a3b8;
+}
+
+/* =========================================================
+   LOGIN / CADASTRO
+   ========================================================= */
+
+.login-layout {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #ffffff,
+        #f8fafc,
+        #eef2ff
+    );
+}
+
+.login-layout .label {
+    -fx-text-fill: #1e293b;
+}
+
+.campo-login {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #1e293b;
+    -fx-prompt-text-fill: #94a3b8;
+    -fx-border-color: #dbe2ea;
+}
+
+.campo-login:focused {
+    -fx-border-color: #6366f1;
+}
+
+.botao-voltar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+}
+
+.botao-voltar:hover {
+    -fx-text-fill: #4f46e5;
+}
+
+.titulo-cadastro {
+    -fx-text-fill: #0f172a;
+}
+
+/* =========================================================
+   CONFIGURAÇÕES
+   ========================================================= */
+
+.configuracoes-layout {
+    -fx-background-color: #f8fafc;
+}
+
+.titulo-configuracoes {
+    -fx-text-fill: #0f172a;
+}
+
+.subtitulo-configuracoes {
+    -fx-text-fill: #4f46e5;
+}
+
+.configuracoes-layout .label {
+    -fx-text-fill: #475569;
+}
+
+.botao-configuracao {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #334155;
+    -fx-border-color: #e2e8f0;
+}
+
+.botao-configuracao:hover {
+    -fx-background-color: #eef2ff;
+    -fx-border-color: #6366f1;
+    -fx-text-fill: #4f46e5;
+}
+
+/* =========================================================
+   BARRA DA JANELA
+   ========================================================= */
+
+.barra-titulo {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+}
+
+.nome-aplicacao {
+    -fx-text-fill: #1e293b;
+}
+
+.botao-janela {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+}
+
+.botao-janela:hover {
+    -fx-background-color: #f1f5f9;
+    -fx-text-fill: #1e293b;
+}
+
+.botao-fechar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #64748b;
+}
+
+.botao-fechar:hover {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   ALERTAS / POPUPS
+   Estilo visual dos Alert do JavaFX
+   ========================================================= */
+
+.dialog-pane {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 14px;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 14px;
+}
+
+/* Cabeçalho do alerta */
+.dialog-pane:header .header-panel {
+    -fx-background-color: #ffffff;
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-text-fill: #0f172a;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+/* Texto da mensagem */
+.dialog-pane .content.label {
+    -fx-text-fill: #475569;
+    -fx-font-size: 14px;
+}
+
+/* Botão OK / Sim / Não / Cancelar */
+.dialog-pane .button {
+    -fx-background-color: #6366f1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-border-color: transparent;
+    -fx-padding: 8px 20px;
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #7c3aed;
+}

@@ -1,0 +1,616 @@
+/* =========================================================
+   CHATCLONE - IDENTIDADE VISUAL
+   Interface moderna inspirada em aplicações de IA
+   ========================================================= */
+
+
+/* =========================================================
+   ÁREA PRINCIPAL
+   ========================================================= */
+
+.border-pane {
+    -fx-background-color: #0f1117;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+    -fx-background-color: #171923;
+    -fx-border-color: #272a36;
+    -fx-border-width: 0 1px 0 0;
+    -fx-padding: 16px;
+}
+
+
+/* Título "Conversas" */
+
+.titulo-sidebar {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 5px 8px 12px 8px;
+}
+
+
+/* =========================================================
+   NOVA CONVERSA
+   ========================================================= */
+
+.nova-conversa {
+    -fx-pref-width: 220px;
+    -fx-pref-height: 42px;
+
+    -fx-background-color: #6366f1;
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+}
+
+
+.nova-conversa:hover {
+    -fx-background-color: #818cf8;
+}
+
+
+/* =========================================================
+   CONVERSAS
+   ========================================================= */
+
+.botao-conversa {
+    -fx-pref-width: 220px;
+    -fx-max-width: Infinity;
+
+    -fx-alignment: CENTER_LEFT;
+
+    -fx-background-color: transparent;
+    -fx-text-fill: #cbd5e1;
+
+    -fx-font-size: 13px;
+
+    -fx-background-radius: 8px;
+
+    -fx-padding: 10px 12px;
+
+    -fx-cursor: hand;
+}
+
+
+.botao-conversa:hover {
+    -fx-background-color: #232634;
+    -fx-text-fill: white;
+}
+
+
+/* Conversa atualmente selecionada */
+
+.conversa-selecionada {
+    -fx-background-color: #272b45;
+    -fx-text-fill: #a5b4fc;
+}
+
+
+/* =========================================================
+   BOTÕES DA SIDEBAR
+   ========================================================= */
+
+.botao-sidebar {
+    -fx-pref-width: 220px;
+
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #94a3b8;
+
+    -fx-alignment: CENTER_LEFT;
+
+    -fx-padding: 10px 12px;
+
+    -fx-background-radius: 8px;
+
+    -fx-cursor: hand;
+}
+
+
+.botao-sidebar:hover {
+    -fx-background-color: #232634;
+    -fx-text-fill: white;
+}
+
+
+/* =========================================================
+   BOTÃO EXCLUIR
+   ========================================================= */
+
+.botao-excluir {
+    -fx-background-color: transparent;
+
+    -fx-text-fill: #64748b;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 6px;
+
+    -fx-cursor: hand;
+}
+
+
+.botao-excluir:hover {
+    -fx-background-color: #3b1f27;
+    -fx-text-fill: #f87171;
+}
+
+
+/* =========================================================
+   CABEÇALHO DO CHAT
+   ========================================================= */
+
+.titulo-chat {
+    -fx-font-size: 19px;
+
+    -fx-font-weight: bold;
+
+    -fx-text-fill: #f8fafc;
+
+    -fx-padding: 18px 22px;
+
+    -fx-background-color: #11131b;
+}
+
+
+/* =========================================================
+   MENSAGEM DO USUÁRIO
+   ========================================================= */
+
+.mensagem-usuario {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #6366f1,
+        #7c3aed
+    );
+
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+
+    -fx-padding: 12px 16px;
+
+    -fx-background-radius: 18px 18px 5px 18px;
+
+    -fx-max-width: 600px;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 0, 0, 0.20),
+        8,
+        0.15,
+        0,
+        2
+    );
+    
+
+    
+   
+}
+
+
+
+/* =========================================================
+   MENSAGEM DA IA
+   ========================================================= */
+
+.mensagem-ia {
+    -fx-background-color: #1b1f2b;
+
+    -fx-text-fill: #e5e7eb;
+    -fx-font-size: 14px;
+
+    -fx-padding: 13px 17px;
+
+    -fx-background-radius: 18px 18px 18px 5px;
+
+    -fx-border-color: #303548;
+    -fx-border-width: 1px;
+    -fx-border-radius: 18px 18px 18px 5px;
+
+    -fx-max-width: 600px;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 0, 0, 0.15),
+        8,
+        0.1,
+        0,
+        2
+    );
+    
+    
+}
+
+
+/* =========================================================
+   CAMPO DE MENSAGEM
+   ========================================================= */
+
+.text-area-mensagem {
+
+    -fx-font-size: 14px;
+
+    -fx-text-fill: #f8fafc;
+
+    -fx-prompt-text-fill: #64748b;
+
+    -fx-background-color: #1b1e29;
+
+    -fx-background-radius: 14px;
+
+    -fx-border-color: #303544;
+
+    -fx-border-radius: 14px;
+
+    -fx-border-width: 1px;
+
+    -fx-padding: 10px 12px;
+}
+
+
+/* Remove fundo interno padrão do TextArea */
+
+.text-area-mensagem .content {
+    -fx-background-color: transparent;
+}
+
+
+/* Campo selecionado */
+
+.text-area-mensagem:focused {
+
+    -fx-border-color: #6366f1;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(99, 102, 241, 0.25),
+        10,
+        0.2,
+        0,
+        0
+    );
+}
+
+
+/* =========================================================
+   BOTÃO ENVIAR
+   ========================================================= */
+
+.botao-enviar {
+
+    -fx-background-color: #6366f1;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 12px;
+
+    -fx-cursor: hand;
+
+    -fx-padding: 0 20px;
+}
+
+
+.botao-enviar:hover {
+
+    -fx-background-color: #818cf8;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(99, 102, 241, 0.35),
+        12,
+        0.2,
+        0,
+        2
+    );
+}
+
+
+/* =========================================================
+   SCROLL
+   ========================================================= */
+
+.scroll-pane {
+
+    -fx-background-color: #0f1117;
+
+    -fx-border-color: transparent;
+}
+
+
+.scroll-pane > .viewport {
+
+    -fx-background-color: #0f1117;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+.scroll-bar {
+
+    -fx-background-color: transparent;
+}
+
+
+.scroll-bar .thumb {
+
+    -fx-background-color: #343849;
+
+    -fx-background-radius: 10px;
+}
+
+
+.scroll-bar .thumb:hover {
+
+    -fx-background-color: #4b5268;
+}
+
+/* =========================================================
+   CORREÇÃO DOS ELEMENTOS BRANCOS DO CHAT
+   Remove o fundo padrão dos componentes JavaFX
+   ========================================================= */
+
+/* Fundo do ScrollPane e área de conteúdo */
+.scroll-pane,
+.scroll-pane .viewport,
+.scroll-pane .corner {
+    -fx-background-color: #0f1117;
+    -fx-border-color: transparent;
+}
+
+/* Remove o quadrado branco de cantos internos */
+.scroll-pane .corner {
+    -fx-background-color: #0f1117;
+}
+
+/* Área superior do chat */
+.titulo-chat {
+    -fx-background-color: #11131b;
+    -fx-text-fill: #f8fafc;
+    -fx-max-width: Infinity;
+}
+
+/* =========================================================
+   ÁREA INFERIOR DO CHAT
+   ========================================================= */
+
+.border-pane > .bottom {
+    -fx-background-color: #0f1117;
+}
+
+/* =========================================================
+   ÁREA DE ENTRADA DO CHAT
+   ========================================================= */
+
+.area-entrada {
+    -fx-background-color: #0f1117;
+}
+
+/* =========================================================
+   TELA DE LOGIN
+   ========================================================= */
+
+.login-layout {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #0f1117,
+        #17152b,
+        #11131b
+    );
+
+    -fx-padding: 40px;
+}
+
+
+/* Título principal */
+
+.login-layout .label {
+    -fx-text-fill: #f8fafc;
+}
+
+
+/* Campos */
+
+.campo-login {
+    -fx-pref-height: 45px;
+
+    -fx-background-color: #1b1f2b;
+
+    -fx-text-fill: #f8fafc;
+
+    -fx-prompt-text-fill: #64748b;
+
+    -fx-font-size: 14px;
+
+    -fx-background-radius: 10px;
+
+    -fx-border-color: #303548;
+
+    -fx-border-radius: 10px;
+
+    -fx-padding: 0 14px;
+}
+
+
+.campo-login:focused {
+    -fx-border-color: #6366f1;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(99, 102, 241, 0.30),
+        12,
+        0.2,
+        0,
+        0
+    );
+}
+
+
+/* Botão Entrar */
+
+.botao-login {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 45px;
+
+    -fx-background-color: linear-gradient(
+        to right,
+        #6366f1,
+        #7c3aed
+    );
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 10px;
+
+    -fx-cursor: hand;
+}
+
+
+.botao-login:hover {
+    -fx-background-color: linear-gradient(
+        to right,
+        #818cf8,
+        #8b5cf6
+    );
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(99, 102, 241, 0.40),
+        15,
+        0.2,
+        0,
+        2
+    );
+}
+
+/* =========================================================
+   TELA DE CADASTRO
+   ========================================================= */
+
+.titulo-cadastro {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+}
+
+.botao-voltar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.botao-voltar:hover {
+    -fx-text-fill: #a5b4fc;
+}
+
+/* =========================================================
+   BARRA DE TÍTULO PERSONALIZADA
+   ========================================================= */
+
+.barra-titulo {
+    -fx-background-color: #171923;
+    -fx-padding: 0 8px 0 18px;
+    -fx-pref-height: 42px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-color: #272a36;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.nome-aplicacao {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.botao-janela {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 16px;
+    -fx-pref-width: 42px;
+    -fx-pref-height: 32px;
+    -fx-cursor: hand;
+}
+
+.botao-janela:hover {
+    -fx-background-color: #272b45;
+    -fx-text-fill: white;
+}
+
+.botao-fechar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #94a3b8;
+    -fx-font-size: 15px;
+    -fx-pref-width: 42px;
+    -fx-pref-height: 32px;
+    -fx-cursor: hand;
+}
+
+.botao-fechar:hover {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+}
+
+/* =========================================================
+   CONFIGURAÇÕES
+   ========================================================= */
+
+.configuracoes-layout {
+    -fx-background-color: #0f1117;
+}
+
+.titulo-configuracoes {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #f8fafc;
+}
+
+.subtitulo-configuracoes {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #a5b4fc;
+}
+
+.configuracoes-layout .label {
+    -fx-text-fill: #cbd5e1;
+}
+
+.botao-configuracao {
+    -fx-background-color: #1b1f2b;
+    -fx-text-fill: #e5e7eb;
+    -fx-border-color: #303548;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px 16px;
+    -fx-cursor: hand;
+}
+
+.botao-configuracao:hover {
+    -fx-background-color: #272b45;
+    -fx-border-color: #6366f1;
+    -fx-text-fill: white;
+}
+
+/* Esfera usada na transição de entrada */
+.esfera-entrada {
+    -fx-fill: #050505;
+}
